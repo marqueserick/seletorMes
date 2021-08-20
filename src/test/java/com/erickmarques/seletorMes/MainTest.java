@@ -9,13 +9,19 @@ public class MainTest {
 	
 	@Test
 	void deveExibirMesJaneiro() {
-		assertEquals("VocÃª selecionou o mÃªs de Janeiro", exibirMes(1));
+		assertEquals("Você selecionou o mês de Janeiro", exibirMes(1));
+		
+	}
+	
+	@Test
+	void deveExibirMesMaio() {
+		assertEquals("Você selecionou o mês de Maio", exibirMes(5));
 		
 	}
 	
 	@Test 
 	void naoDeveExibirMes() {
-		assertEquals("Valor selecionando nÃ£o corresponde a um mÃªs do ano", exibirMes(13));
+		assertEquals("Valor selecionando não corresponde a um mês do ano", exibirMes(13));
 	}
 
 }
